@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Muslibry main page</title>
+</head>
+<body>
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Maciej Madzia Projekt Muscilibry</h1>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Songs</h2>
+            <p>The main part of whole app.
+            <ul>
+                <li><a href="#" th:href="@{'/song/list'}" style="margin-right: 5px;">List</a>all of your songs</li>
+                <li><a href="#" th:href="@{'/song/new'}" style="margin-right: 5px;">Add new</a>song</li>
+            </ul>
+
+            <p><a class="btn btn-default" href="#" role="button" th:href="@{'/songs/'}" >All Songs &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>Artists</h2>
+            <p>Artists you chose!</p>
+            <ul>
+                <li><a href="#" th:href="@{'/artist/list'}" style="margin-right: 5px;">List</a>all of your artists</li>
+                <li><a href="#" th:href="@{'/artist/new'}" style="margin-right: 5px;">Add new</a>artist</li>
+            </ul>
+
+            <p><a class="btn btn-default" href="#" role="button" th:href="@{'/artists/'}" >All Artists &raquo;</a></p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2019 NoCodeX, LLC.</p>
+    </footer>
+</div> <!-- /container -->
+</body>
+</html>
